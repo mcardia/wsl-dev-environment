@@ -20,7 +20,7 @@ To split development environments into several WSL2 distro helps to keep each on
 1. Download de release.
 2. Install oh-my-fish or oh-my-bash (for fish or bash shell respectivily)
 3. If you are using fish and SDKMAN, install [reitzig/sdkman-for-fish](https://github.com/reitzig/sdkman-for-fish)
-4. Extract the release into your user directory (usually `c:\User\<username>`)
+4. Extract the release into your choosen directory (I've choose `C:\User\<username>`)
 ![.wsl location](https://github.com/mcardia/wsl-dev-environment/blob/main/screenshot-wsl-location.png?raw=true)
 5. If using fish
 - remove the directories:
@@ -41,6 +41,8 @@ source $OSH/oh-my-bash.sh
 ```
 7. (warning: security issue) Change the permission to allow your user to write the file 
 `C:\Windows\System32\drivers\etc\hosts`
+8. Set the environment variables to point `WSL_HOME` to the folder `<drive>:\<wherever you extracted>\.wsl` and `WSLENV` to inform WSL which envvars it should bring from windows to the WSL distro (don't forget the `/p` at end to translate the path. More, [click here](https://devblogs.microsoft.com/commandline/share-environment-vars-between-wsl-and-windows/))
+![Windows Environment Variables](https://github.com/mcardia/wsl-dev-environment/blob/main/screenshot-env-vars.png?raw=true)
 
 ## How to Use
 ![Listing WSL Distros](https://github.com/mcardia/wsl-dev-environment/blob/main/screenshot-wsl-list.png?raw=true)
