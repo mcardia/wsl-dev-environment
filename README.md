@@ -32,6 +32,7 @@ To split development environments into several WSL2 distro helps to keep each on
 ```
 # ln -sf ~/winhome/.wsl/etc/fish/config/fish ~/.config/fish
 # ln -sf ~/winhome/.wsl/etc/fish/config/omf ~/.config/omf
+# ln -sf ~/winhome/.wsl/etc/fish/default.fish ~/.config/fish/config.fish
 ```
 6. If using bash, edit the .bashrc file and  add the follow line just before the line that loads OMB:
 ```
