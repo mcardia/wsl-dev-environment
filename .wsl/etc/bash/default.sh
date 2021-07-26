@@ -1,7 +1,7 @@
 
 export ENV_DIR=${WSL_HOME}/etc/bash
-export ENV_USER=${ENV_DIR}/${USER:l}.sh
-export ENV_DISTRO=${ENV_DIR}/${WSL_DISTRO_NAME:l}.sh
+export ENV_USER=${ENV_DIR}/${USER,,}.sh
+export ENV_DISTRO=${ENV_DIR}/${WSL_DISTRO_NAME,,}.sh
 export ENV_DEFAULT=${ENV_DIR}/default.sh
 export ENV_SHARED=${WSL_HOME}/etc/shared/bash
 export CREDENTIALS_FILE=${WSL_HOME}/etc/credentials
@@ -43,7 +43,7 @@ _print "- Common settings..."
 next_level
     _alias lstcp "ss -l -4 -t -n -p"
     _alias lsudp "ss -l -4 -u -n -p"
-    
+    _alias top "htop"  
     _print "Loading Fast Node Manager..."
     next_level
     if [ ! -d $HOME/.fnm ]; then

@@ -15,6 +15,7 @@ _aliasx eclipse "$ECLIPSE_HOME/eclipse"
 _aliasx ideaIC "$IDEAIC_HOME/bin/idea.sh"
 _aliasx sqldeveloper "/opt/oracle/sqldeveloper"
 
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 _print "Loading SDKMAN!"
 [[ -s "/opt/sdkman/bin/sdkman-init.sh" ]] && source "/opt/sdkman/bin/sdkman-init.sh"
 

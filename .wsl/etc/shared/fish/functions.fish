@@ -76,8 +76,3 @@ function reload
             _source $ENV_DIR/fish/default.fish
     end
 end
-
-#function nvm
-#    bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
-#end
-
